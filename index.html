@@ -1,19 +1,40 @@
 <!DOCTYPE html>
+<!--Con ChatGPT-->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aprender a aprender</title>
-    <link rel="stylesheet" href="./vendor/normalize.css" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <!--Favicon (opcional): Si el brief no lo pide, puedes dejarlo fuera por ahora, 
+    pero si más adelante quieres un ícono en la pestaña del navegador:-->
+    <link rel="icon" href="./images/triangle.svg" type="image/svg+xml" />
   </head>
   <body>
     <div class="page">
       <header class="header">
-        <div>
-          <img src="./images/TripletenLogo.svg" alt="Tripleten Logo" />
+        <img
+          src="./images/TripletenLogo.svg"
+          alt="Tripleten Logo"
+          class="logo logo_place_header"
+        />
+        <h1 class="header__title">Aprender a aprender</h1>
+
+        <div class="header__text-block">
+          <p class="header__subtitle">
+            Las técnicas de aprendizaje más eficaces y avanzadas que puedes
+            aplicar en tu vida diaria
+          </p>
+          <a href="#" class="header__link">Más información →</a>
         </div>
-        <h1>Aprendiendo a aprender</h1>
+
+        <img
+          src="./images/on_the_edge.png"
+          alt="El ponderador épico se paró en la cima de una montaña a deliberar sobre los puntos más delicados del sistema educativo moderno, mientras también se preguntaba de dónde vino ese cuadrado azul gigante"
+          class="header__main-illustration"
+        />
+        <div class="header__square"></div>
       </header>
       <main class="content">
         <section class="description"></section>
