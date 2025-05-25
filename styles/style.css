@@ -29,7 +29,7 @@ p {
   position: relative;
 }
 
-.logo {
+.logo_place_header {
   width: 154px;
   height: 31px;
   position: absolute;
@@ -138,4 +138,47 @@ recordarte cómo configurar los estilos de los elementos*/
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.digits {
+  display: flex;
+  flex-direction: column;
+}
+.digits__title {
+  margin: 0;
+  padding-top: 100px;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 50px;
+  font-weight: bold;
+}
+.digits__subtitle {
+  padding-top: 20px;
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+.digits__table {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto 100px;
+  max-width: 1100px;
+  justify-content: space-between;
+}
+
+.table__cell {
+  width: 250px;
+}
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 60px;
+}
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 20px;
 }
