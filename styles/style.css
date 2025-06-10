@@ -1,5 +1,8 @@
 body,
 h1,
+h2,
+h3,
+h4,
 p {
   margin: 0;
   padding: 0;
@@ -16,7 +19,7 @@ p {
   /* esto garantiza que todo el contenido esté centrado en pantallas de más de 1600 px */
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
-
+/*INICIA SECCIÓN HEADER*/
 .header {
   height: 100vh;
   min-height: 600px;
@@ -90,7 +93,9 @@ recordarte cómo configurar los estilos de los elementos*/
   right: 0px;
   z-index: 1;
 }
+/*TERMINA SECCIÓN HEADER*/
 
+/*INICIA SECCIÓN DESCRIPTION*/
 .description {
   margin: 100px 0;
 }
@@ -132,14 +137,10 @@ recordarte cómo configurar los estilos de los elementos*/
   line-height: 34px;
   font-weight: bold;
 }
-/* incluidos aquellos con modificadores clave-valor */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-}
 
+/*TERMINA SECCIÓN DESCRIPTION*/
+
+/*INICIA SECCIÓN DIGITS*/
 .digits {
   display: flex;
   flex-direction: column;
@@ -166,19 +167,249 @@ recordarte cómo configurar los estilos de los elementos*/
   max-width: 1100px;
   justify-content: space-between;
 }
+/*TABLA AL FINAL*/
+/*TERMINA SECCIÓN DIGITS*/
+
+/*INICIA SECCIÓN FEYNMAN*/
+.feynman {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 790px;
+}
+.feynman__image {
+  width: 867px;
+  height: 637px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: 0;
+}
+.feynman__title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  padding-top: 100px;
+  text-align: center;
+  align-self: center;
+  width: 775px;
+  z-index: 1;
+}
+.feynman__subtitle {
+  margin: 70px 0 0;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: bold;
+  align-self: center;
+  z-index: 1;
+}
+
+/*.feynman__link {
+  margin-right: 48px;
+  text-align: end;
+  color: #2f80ed;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: bold;
+  z-index: 1;
+}*/
+.feynman__link {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  transform: translateY(-50%);
+  color: #2f80ed;
+  font-size: 36px;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+}
+/*TERMINA SECCIÓN FEYNMAN*/
+
+/*INICIA SECCIÓN KAUFMAN*/
+.kaufman {
+  background-color: #1f1f1f;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+.kaufman__title {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 90px;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.kaufman__subtitle {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  color: #fff;
+  padding: 20px 0 0;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/*TABLA*/
+.table {
+  margin: 0 auto;
+  list-style: none;
+}
+.table_theme_dark {
+  color: #fff;
+  margin: 0 auto;
+  padding: 0 0 90px;
+  display: flex;
+  max-width: 1100px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
 
 .table__cell {
   width: 250px;
+  text-decoration: none;
 }
+/* incluidos aquellos con modificadores clave-valor */
+.table__cell_theme_dark {
+  text-decoration: none;
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
+}
+
 .table__heading {
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
   margin-top: 60px;
 }
+.table__heading_theme_dark {
+  color: #fff;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
 .table__text {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   margin-top: 20px;
 }
+.table__text_theme_dark {
+  color: #fff;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 20px;
+}
+/*TERMINA TABLA*/
+
+.kaufman__triangle {
+  position: absolute;
+  right: -124px;
+  top: 0;
+  z-index: 0;
+  width: 960px;
+  height: 936px;
+}
+.kaufman__triangle-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*TERMINA SECCIÓN KAUFMAN*/
+
+/*INICIA FOOTER*/
+.footer {
+  margin: 0;
+  background-color: #1f1f1f;
+  min-height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__columns {
+  margin: 0;
+  width: 90%;
+  display: flex;
+  margin: 60px auto 40px;
+  justify-content: space-between;
+}
+
+.logo_place_footer {
+  width: 183px;
+  height: 35px;
+}
+.footer__column_content_copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__column-group {
+  display: flex;
+  gap: 135px;
+}
+.footer__column_content_about {
+  display: flex;
+  flex-direction: column;
+}
+.footer__column_content_social {
+  display: flex;
+  flex-direction: column;
+}
+.logo_place_footer {
+  width: 183px;
+  height: 35px;
+}
+.footer__author {
+  color: #fff;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 18px 0;
+}
+.footer__column-heading {
+  color: #fff;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.footer__list {
+  color: #fff;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer__column-link {
+  color: #fff;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  list-style: none;
+  text-decoration: none;
+}
+.footer__social-icons {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+/*TERMINA FOOTER*/
